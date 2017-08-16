@@ -4,10 +4,10 @@ from random import randint
 # print game instructions
 print(
         "\nLet's play Battleship!"
-        + "\nThere are 3 hidden ships."
-        + "\nShip size is 1 dot."
         + "\n'.' is unattacked ocean."
         + "\n'X' is missed shots."
+        + "\nThere are 3 hidden ships."
+        + "\nShip size is 1 dot."
         + "\nGuess a row, then a column."
         + "\nYou get 4 guesses."
         )
@@ -86,5 +86,5 @@ for turn in range(4):
             board[guess_row][guess_col] = "X"
         # if user is on their 4th guess, print game over
         if turn == 4:
-            print("Game Over.\nYou Lose.\nNeener neener neener nana nana nana!")
+            print("Game Over.\nYou Lose.")
         print_board(board)
